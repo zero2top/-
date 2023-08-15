@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/css/first-page.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청춘 캠퍼스 - 홈</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23040648f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <Div class = "container">
+            <h1 class = "nav-logo"><a href = "./first-page.html"><i class="fa-solid fa-school"></i>청춘 캠퍼스</i></a></h1>
+            <div class = "nav-menu">
+                <u1 class = "nav-btn">
+                    <li><a href = "first-page.html" target = "_blank"
+                           onclick = "location.href = 'first-page.html'"
+                           th:onclick="|location.href='@{/home}'|"
+                    >홈</a></li>
+                    
+                    <li><a href = "login.html" target = "_blank"
+                           onclick = "location.href = 'login.html'"
+                           th:onclick="|location.href='@{/login}'|"
+                    >로그인</a></li>
+
+                    <li><a href = "signup.html" target = "_blank"
+                           onclick = "location.href = 'signup.html'"
+                           th:onclick="|location.href='@{/signup}'|"
+                    >회원가입</a></li>
+                </u1>
+            </div>
+        </Div>
+    </nav>
+
+    <section>
+    <div class="hd">
+        <div class="container">
+            <h2 class="hd-title">청춘 캠퍼스</h2>
+            <h3 class="hd-container">노인분들을 위한 맞춤형 디지털 강의 서비스</h3>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class = "main" style="text-align: center;">
+            <button class="button1"
+                    onclick = "location.href = 'main.html'"
+                    th:onclick="|location.href='@{/main}'|"
+                    type="button" >강의 수강하기</button>
+
+            <button type="button" class="button2" onclick = "location.href = 'https://www.naver.com'" >강의 업로드</button>
+            <!-- 여기는 강의 업로드인데 아직 미완성이므로 href연결 안 했썽 -->
+        </div>
+    </section>
+
+  
+  
+    
+</body>
+</html>

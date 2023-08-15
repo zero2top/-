@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>청춘 캠퍼스 - 강의 수강하기</title>
+  <link rel="stylesheet" href="../static/css/mainclass.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/23040648f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="nav-logo"><a href="first-page.html"><i class="fa-solid fa-school">청춘 캠퍼스</i></a></h1>
+            <div class="nav-menu">
+                <u1 class="nav-btn">
+                    <li><a href="first-page.html">홈</a></li>
+                    
+                    <li><a href="login.html" target="_blank">로그인</a></li>
+                </u1>
+            </div>
+        </div>
+    </nav>
+
+
+  <div class="content">
+    <h1>어르신들을 위한 스마트폰활용강의 01 (1부)</h1>
+    <div>(온라인강의) 스마트폰기초01(1부)_최미숙 강사</div>
+    <div>성동노인종합복지관 온라인강의 </div>
+    <div>최미숙 강사님과 함께하는 스마트폰 기초</div>
+    <!-- 강의 내용 표시 -->
+  </div>
+  
+  <div class="buttons">
+    <button id="showLectureButton">강의보기</button>
+    <button id="showQuestionButton">질문하기</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopup">&times;</span>
+      <h2>질문창</h2>
+      <textarea id="questionTextarea" rows="4" placeholder="질문을 입력하세요"></textarea>
+      <button id="submitQuestion">질문 등록</button>
+      <button id="showQuestionBoardButton">질문 게시판</button>
+    </div>
+  </div>
+
+
+  
+
+  <script src="mainclass.js"></script>
+</body>
+</html>
