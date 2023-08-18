@@ -17,7 +17,7 @@ public class BasicController {
     private final MemberService memberService;
     @GetMapping("/home")
     public String showFirstPage(){
-        return "first-page";
+        return "index";
     }
 
     @GetMapping("/home/logind/{id}")

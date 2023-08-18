@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -29,7 +28,7 @@ public class MemberController {
     public String save(@ModelAttribute MemberDTO memberDTO) {
         System.out.println(memberDTO);
         memberService.save(memberDTO);
-        return "first-page";
+        return "index";
     }
 /*    @PostMapping("/signup")
     public String save(@RequestParam("email") String email,
