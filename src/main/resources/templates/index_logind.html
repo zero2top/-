@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청춘 캠퍼스 - 홈</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23040648f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <Div class = "container">
+            <h1 class = "nav-logo"><a th:href="@{|/home/logind/${id}|}">
+                <i class="fa-solid fa-school">
+                </i>청춘 캠퍼스</i>
+            </a></h1>
+            <div class = "nav-menu">
+                <u1 class = "nav-btn">
+                    <li><a th:href="@{|/home/logind/${id}|}">홈</a></li>
+                    <li>
+                        <a th:href="@{|/MyPage/${id}|}" th:text="|[${member.getName()}] 님|"></a>
+                    </li>
+                </u1>
+            </div>
+        </Div>
+    </nav>
+
+    <section>
+    <div class="hd">
+        <div class="container">
+            <h2 class="hd-title">청춘 캠퍼스</h2>
+            <h3 class="hd-container">노인분들을 위한 맞춤형 디지털 강의 서비스</h3>
+        </section>
+    <section>
+        <div class = "main" style="text-align: center;">
+            <a class = "button1 " th:href="@{|/main/logind/${id}|}">강의수강하기</a>
+            <br>
+            <br>
+            <a class = "button2 " th:href="@{|/ask/${id}|}">질문하기</a>
+        </div>
+    </section>
+
+    <section class="blank">
+
+    </section>
+
+    <footer class = "foot">
+        <div class="footleft">
+            <a href="https://www.instagram.com/likelion.univ/"><img class="instagram" src="/css/instagramw.png" width="30px" height="30px"></a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="https://blog.naver.com/"><img class="blog" src="/css/nblogw.png" width="30px" height="30px"></a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="https://tistory.com/"><img class="tistory" src="/css/tistory.png" width="30px" height="30px"></a>
+        </div>
+        <div class="footcenter">
+            <h2>청춘캠퍼스</h2>
+        </div>
+        
+        <div class="footright">
+            <h5 class="hyperlink">
+            </h5>
+            <a href="#"><img src="/css/topw.png" width="40px" height="40px"></a>
+        </div>
+    </footer>
+</body>
+</html>

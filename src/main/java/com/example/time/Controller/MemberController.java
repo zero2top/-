@@ -30,23 +30,8 @@ public class MemberController {
         memberService.save(memberDTO);
         return "index";
     }
-/*    @PostMapping("/signup")
-    public String save(@RequestParam("email") String email,
-                       @RequestParam("name") String name,
-                       @RequestParam("password1") String password1,
-                       @RequestParam("password2") String password2) throws SQLException, ClassNotFoundException {
-        System.out.printf("name : %s, email : %s, password1 : %s, password2 : %s", name, email, password1, password2);
-        if(password1.equals(password2)){
-            userDao.add(name, email, password1);
-            return "first-page";
-        }
-        else{
-            return "signup";
-        }
-    }*/
     @GetMapping("/login/alert")
     public String showAlertPage(){return "LoginRequire";}
-
 
     @GetMapping("/login")
     public String showLoginPage(){return "login";}
@@ -59,14 +44,13 @@ public class MemberController {
             model.addAttribute("name", loginResult.getName());
             model.addAttribute("id", loginResult.getId());
             model.addAttribute("member", loginResult);
-            return "first-page-logind";
+            return "index_logind";
         }
         else{
             System.out.println("로그인 실패");
             return "LoginFailure";
         }
     }
-
     @GetMapping("/member")
     public String findALl(Model model){
         List<MemberDTO> memberDTOArrayList = memberService.findAll();
@@ -86,10 +70,6 @@ public class MemberController {
         model.addAttribute("member", memberDTO);
         return "MyPage";
     }
-
     @GetMapping("/delete/warning")
     public String showWarning(){return "DeleteWarning";}
-
-
-
 }

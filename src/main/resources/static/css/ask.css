@@ -1,7 +1,7 @@
 
 html{
     font-size: 10px;
-}
+} 
 nav h1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
@@ -11,7 +11,7 @@ nav h1 {
 
 }   */
 .board_wrap{
-
+    
     width: 1000px;
     margin: 100px auto;
 }
@@ -19,11 +19,11 @@ nav h1 {
 /*제목, 부제목 설정*/
 .board_title{
     margin-bottom: 30px;
-
+    
 }
 .board_title h1{
     font-size: 3rem;
-
+    
 }
 .board_title p{
     margin-top: 5px;
@@ -31,7 +31,14 @@ nav h1 {
 }
 
 /*버튼 설정*/
-.bt_wrap{
+
+.buttons button {
+    margin-bottom: 20px;
+    padding: 20px;
+    
+    
+  }
+/* .bt_wrap{
     margin-top: 30px;
     text-align: center;
     font-size: 0;
@@ -51,7 +58,7 @@ nav h1 {
 }
 .bt_wrap a:nth-child(1){
     margin-left: 0;
-}
+} */
 
 /*리스트 블록 설정*/
 .board_list{
@@ -79,24 +86,24 @@ nav h1 {
 }
 
 /*공백 영역 설정*/
-.board_list .id{
+.board_list .num{
     width: 10%;
 }
-.board_list .email{
-    width: 40%;
+.board_list .title{
+    width: 60%;
+    text-align: left;
+}
+.board_list .top .title{
     text-align: center;
 }
-.board_list .top .email{
-    text-align: center;
-}
-.board_list .name{
+.board_list .writer{
     width: 10%;
 }
-.board_list .refer{
+.board_list .date{
     width: 10%;
 }
-.board_list .delete{
-    width: 10%;
+.board_list .count{
+    width: 8%;
 }
 
 /*페이지 설정*/
@@ -138,7 +145,7 @@ nav h1 {
 
 
 
-* {
+* { 
     box-sizing: border-box;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
@@ -147,6 +154,7 @@ nav h1 {
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 a:link, a:visited {
@@ -165,7 +173,7 @@ nav {
     background-color: aliceblue;
     line-height: 80px;
     font-size:medium
-
+    
 }
 
 .nav-logo{
@@ -198,13 +206,13 @@ li {
     list-style: none;
 }
 .login {
-    width: 410px;
-    position: absolute;
+    width: 410px; 
+    position: absolute; 
     left:50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+     top: 50%;
+     transform: translate(-50%, -50%);
 }
-.login h2{
+.login h2{ 
     font-size: 32px;
     border-bottom: 2px solid #111; text-align: center;
 
@@ -215,10 +223,10 @@ li {
     padding: 0 0 12px;
 }
 .login li input {
-    width : 90%;
+    width : 90%; 
     height: 46px;
     box-sizing: border-box;
-
+    
 }
 .login li input::-webkit-input-placeholder{font-size:16px; color:#9fa19f;}
 
@@ -228,3 +236,112 @@ li {
 
 
 /* 지훈오빠 css */
+
+
+
+
+  
+  .buttons {
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: column;
+    width: 300px;
+    
+    
+
+    /* gap: 20px; 버튼 사이 간격 */
+    
+  }
+  
+  
+  
+  
+ 
+   
+  /* .buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  } */
+  
+  .popup {
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .popup-content {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+     
+  }
+  
+  .close {
+    text-align: right;
+    float: right;
+    cursor: pointer;
+    width: 100%;
+   
+  }
+  
+  textarea {
+    float: right;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 10px;
+    max-width: 100% ;
+    min-width: 100%;
+  }
+
+  .foot {
+    height: 100px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    display: flex;
+}
+
+.footleft {
+    width: 500px;
+    /* background-color: red; */
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+    font-weight: lighter;
+}
+
+.footcenter {
+    width: 650px;
+    color: white;
+    /* background-color: yellow; */
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footright {
+    width: 400px;
+    /* background-color: green; */
+    justify-content: space-between;
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.blank  {
+    width: 100%;
+    height: 130px;
+}

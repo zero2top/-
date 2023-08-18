@@ -26,7 +26,7 @@ public class BasicController {
         model.addAttribute("member", memberDTO);
         session.setAttribute("id", memberDTO.getId());
         System.out.println( memberDTO.getId());
-        return "first-page-logind";
+        return "index_logind";
     }
 
     @GetMapping("/home/{id}")
@@ -45,9 +45,12 @@ public class BasicController {
         System.out.println( memberDTO.getId());
         return "main-logind";
     }
-
-    @GetMapping("/ask")
-    public String showAskForm(){
+    @GetMapping("/ask/{id}")
+    public String showAskForm(@PathVariable Long id, Model model, HttpSession session){
+        MemberDTO  memberDTO = memberService.findById(id);
+        model.addAttribute("member", memberDTO);
+        session.setAttribute("id", memberDTO.getId());
+        System.out.println( memberDTO.getId());
         return "ask";
     }
 }

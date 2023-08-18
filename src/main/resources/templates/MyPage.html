@@ -14,10 +14,14 @@
 <body>
 <nav>
     <div class="container">
-        <h1 class="nav-logo"><a th:href="@{|/home/logind/${member.getId()}|}"><i class="fa-solid fa-school">청춘 캠퍼스</i></a></h1>
+        <h1 class="nav-logo"><a th:href="@{|/home/logind/${id}|}">
+            <i class="fa-solid fa-school">
+            </i>청춘 캠퍼스</i>
+        </a></h1>
         <div class="nav-menu">
             <u1 class="nav-btn">
-                <li><a th:href="@{|/home/logind/${member.getId()}|}">홈</a></li>
+                <li><a th:href="@{|/home/logind/${id}|}">홈</a></li>
+                <li>
             </u1>
         </div>
     </div>

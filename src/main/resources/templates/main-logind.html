@@ -1,15 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        청춘 캠퍼스 - 강의 목록
-    </title>
-    <link rel="stylesheet" href="./main.css">
+    <title>청춘 캠퍼스 - 강의 목록</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
@@ -18,17 +14,13 @@
 <body>
 <nav>
     <Div class = "container">
-        <h1 class = "nav-logo">
-            <a th:href="@{|/home/logind/${id}|}">
-                <i class="fa-solid fa-school">
-                </i>청춘 캠퍼스</i>
-            </a>
-        </h1>
+        <h1 class = "nav-logo"><a href = "./index.html"><i class="fa-solid fa-school"></i>청춘 캠퍼스</i></a></h1>
         <div class = "nav-menu">
             <u1 class = "nav-btn">
                 <li><a th:href="@{|/home/logind/${id}|}">홈</a></li>
-
-                <li><a th:href="@{|/MyPage/${id}|}" th:text="|[${member.getName()}] 님|"></a></li>
+                <li>
+                    <a th:href="@{|/MyPage/${id}|}" th:text="|[${member.getName()}] 님|"></a>
+                </li>
             </u1>
         </div>
     </Div>
@@ -40,74 +32,21 @@
             <h2 class="hd-title">누구나 쉽게 배우는</h2>
             <h3 class="hd-container">청춘 캠퍼스 강의</h3>
 </section>
+
 <div class="wrap">
-    <section>
+    <section class="wrapping">
         <h1>강의 목록</h1>
         <span>배우고 싶은 서비스를 청춘 캠퍼스에서 마음껏 수강하세요</span>
         <br>
         <br>
-        <!-- <div class = sty>
-            <ul>
-                <li class="vid1">
-                    <a href="#">
-                        <span class = "thumb">
-                            <img src="./그림1.png" alt="">
-                            <em>category</em>
-                        </span>
-                        <Strong>강의 제목</Strong>
-                    </a>
-                    <p></p>
-                </li>
-                <li class="vid2">
-                    <a href="#">
-                        <span class = "thumb">
-                            <img src="./그림1.png" alt="">
-                            <em>category</em>
-                        </span>
-                        <Strong>15분만에 배우는 카카오톡 강의</Strong>
-                    </a>
-                    <p></p>
-                </li>
-                <li class="vid3">
-                    <a href="#">
-                        <span class = "thumb">
-                            <img src="./그림1.png" alt="">
-                            <em>category</em>
-                        </span>
-                        <Strong>강의 제목</Strong>
-                    </a>
-                    <p></p>
-                </li>
-                <li class="vid4">
-                    <a href="#">
-                        <span class = "thumb">
-                            <img src="./그림1.png" alt="">
-                            <em>category</em>
-                        </span>
-                        <Strong>강의 제목</Strong>
-                    </a>
-                    <p></p>
-                </li>
-                <li class="vid5">
-                    <a href="#">
-                        <span class = "thumb">
-                            <img src="./그림1.png" alt="">
-                            <em>category</em>
-                        </span>
-                        <Strong>강의 제목</Strong>
-                    </a>
-                    <p></p>
-                </li>
-
-            </ul>
-        </div> -->
+    </section>
 </div>
-</section>
+
 <section class="secc">
     <div class="sec1">
-        <a href="http://localhost:8080/login/alert">
+        <a href="./mainclass.html">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/kakaotalk.png" alt="">
                     <br>
                     <span class="category">[모바일]</span>
                 </span>
@@ -116,67 +55,67 @@
         </a>
     </div>
     <div class="sec2">
-        <a href="http://localhost:8080/login/alert">
+        <a href="./mainclass1.html">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/toss.png" alt="">
                     <br>
-                    <em class="category">category</em>
+                    <span class="category">[모바일]</span>
                 </span>
             <br>
-            <Strong>강의 제목</Strong>
+            <Strong>간단하게 배우는 온라인 뱅킹</Strong>
         </a>
     </div>
     <div class="sec3">
-        <a href="http://localhost:8080/login/alert">
+        <a href="./mainclass2.html">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/kiosk.jpg" alt="">
                     <br>
-                    <em class="category">category</em>
+                    <span class="category">[기타 서비스]</span>
                 </span>
             <br>
-            <Strong>강의 제목</Strong>
+            <Strong>복잡해보이지만 알고보면 간단한 <br> 키오스크 주문방법</Strong>
         </a>
     </div>
     <div class="sec4">
-        <a href="http://localhost:8080/login/alert">
+        <a href="./mainclass3.html">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/naver.png" alt="">
                     <br>
-                    <em class="category">category</em>
+                    <span class="category">[웹 서비스]</span>
                 </span>
             <br>
-            <Strong>강의 제목</Strong>
+            <Strong>네이버 쇼핑 이용법</Strong>
         </a>
     </div>
 </section>
 
 <section class="secc2">
     <div class="sec1">
-        <a href="http://localhost:8080/login/alert">
+        <a href="./mainclass4.html">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/youtube.png" alt="">
                     <br>
-                    <em class="category">category</em>
+                    <span class="category">[웹 서비스]</span>
                 </span>
             <br>
-            <Strong>강의 제목</Strong>
+            <Strong>유튜브에 나만의 영상 올리기</Strong>
         </a>
     </div>
     <div class="sec2">
-        <a href="http://localhost:8080/login/alert">
+        <a href="#">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/그림1.png" alt="">
                     <br>
-                    <em class="category">category</em>
+                    <span class="category">[모바일]</span>
                 </span>
             <br>
             <Strong>강의 제목</Strong>
         </a>
     </div>
     <div class="sec3">
-        <a href="http://localhost:8080/login/alert">
+        <a href="#">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/그림1.png" alt="">
                     <br>
                     <em class="category">category</em>
                 </span>
@@ -185,9 +124,9 @@
         </a>
     </div>
     <div class="sec4">
-        <a href="http://localhost:8080/login/alert">
+        <a href="#">
                 <span class="thumb">
-                    <img class="img1" src="./그림1.png" alt="">
+                    <img class="img1" src="/css/그림1.png" alt="">
                     <br>
                     <em class="category">category</em>
                 </span>
@@ -196,7 +135,6 @@
         </a>
     </div>
 </section>
-
 
 
 </body>
