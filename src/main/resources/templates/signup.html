@@ -15,19 +15,23 @@
 <body>
     <nav>
         <Div class = "container">
-            <h1 class = "nav-logo"><a href = "first-page.html"><i class="fa-solid fa-school"></i>청춘 캠퍼스</i></a></h1>
+            <h1 class = "nav-logo">
+                <a href = "first-page.html" target = "_blank"
+                   th:onclick="|location.href='@{/home}'|">
+                    <i class="fa-solid fa-school">
+                    </i>청춘 캠퍼스</i>
+                </a>
+            </h1>
             <div class = "nav-menu">
                 <u1 class = "nav-btn">
                     <li><a href = "first-page.html" target = "_blank"
                             onclick = "location.href = 'first-page.html'"
                             th:onclick="|location.href='@{/home}'|"
                     >홈</a></li>
-
                     <li><a href = "login.html" target = "_blank"
                            onclick = "location.href = 'login.html'"
                            th:onclick="|location.href='@{/login}'|"
                     >로그인</a></li>
-
                 </u1>
             </div>
         </Div>
@@ -38,8 +42,7 @@
             <form action ="/signup" method = "post">
                 <li><input type = "name" placeholder="이메일" title = "이메일" name = "email"></li>
                 <li><input type = "name" placeholder="이름" title = "이름" name = "name"></li>
-                <li><input type = "password" placeholder="비밀번호" title = "비밀번호 입력" name = "password1"></li>
-                <li><input type = "password" placeholder="비밀번호확인" title = "비밀번호 한번 더 입력" name = "password2"></li>
+                <li><input type = "password" placeholder="비밀번호" title = "비밀번호 입력" name = "password"></li>
                 <input type="submit" value="회원가입">
             </form>
         </ul>

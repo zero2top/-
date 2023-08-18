@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청춘캠퍼스 - 내정보</title>
+    <link rel="stylesheet" href="/css/MyPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23040648f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <div class="container">
+        <h1 class="nav-logo"><a th:href="@{|/home/logind/${member.getId()}|}"><i class="fa-solid fa-school">청춘 캠퍼스</i></a></h1>
+        <div class="nav-menu">
+            <u1 class="nav-btn">
+                <li><a th:href="@{|/home/logind/${member.getId()}|}">홈</a></li>
+            </u1>
+        </div>
+    </div>
+</nav>
+
+<div class="board_wrap">
+    <div class="board_title">
+        <h1>회원 정보</h1>
+        <p th:text="|회원명 : ${member.name}|"></p>
+    </div>
+    <div class="board_list_wrap">
+        <div class="board_list">
+            <div class="top">
+                <div class="email">Email</div>
+                <div class="name">이름</div>
+                <div class="password">비밀번호</div>
+            </div>
+            <div>
+                <div class="email" th:text="${member.email}"></div>
+                <div class="name" th:text="${member.name}"></div>
+                <div class="password" th:text="${member.password}"></div>
+            </div>
+
+        </div>
+        <!--    <div class="bt_wrap">
+              <a href="ask.html" class="popup">글쓰기</a>
+              <div id="popup" class="popup">글쓰기
+                <div class="popup-content">
+                  <span class="close" id="closePopup">&times;</span>
+                </div>
+              </div>
+            </div>-->
+    </div>
+</div>
+</body>
+</html>

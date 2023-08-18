@@ -92,7 +92,7 @@ nav h1 {
 .board_list .name{
     width: 10%;
 }
-.board_list .refer{
+.board_list .password{
     width: 10%;
 }
 .board_list .delete{
@@ -201,8 +201,8 @@ li {
     width: 410px;
     position: absolute;
     left:50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+     top: 50%;
+     transform: translate(-50%, -50%);
 }
 .login h2{
     font-size: 32px;
